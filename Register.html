@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INFOSTUD</title>
+  <link href="Register.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQOzFakhJQebE-EOAuyXMW_yIGT0FnO3RDb6OfWni6zTTd14XOhgH_m9kjEZ_EMitTCo&usqp=CAU">
+</head>
+<body>
+<header>
+		
+<nav>
+			<ul>
+				<li><a href="home.html">Homepage</a></li>
+				<li><a href="abs.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="service.html">Services</a></li>
+				<li><a href="FaQs.html">FAQs</a></li>
+                                <li><a href="blog.html">Our Blog</a></li>
+				<li><a href="terms.html">Terms&Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="Checkout.html">Fees</a></li>
+				<li><a href="search.html">Search</a></li>
+                                <li><a href="Login.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+  <div class="login-container">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQOzFakhJQebE-EOAuyXMW_yIGT0FnO3RDb6OfWni6zTTd14XOhgH_m9kjEZ_EMitTCo&usqp=CAU" alt="Logo" height="200px" width="200px">
+      <h2>Register to <bb id="Hello">INFOSTUD</bb></h2>
+      <form id="loginForm" onsubmit="return validateForm()">
+          <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+              <div class="error" id="usernameError"></div>
+  <div>
+   <div class="input-group">
+              <label for="email address">email address</label>
+              <input type="text" id="email address" name="email address" required>
+
+          </div>
+          <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+              <div class="error" id="passwordError"></div>
+          </div>
+          <button type="submit">Register</button>
+      </form>
+  </div>
+
+  <script>
+      function validateForm() {
+          // Clear previous errors
+          document.getElementById('usernameError').innerText = '';
+          document.getElementById('passwordError').innerText = '';
+
+          let isValid = true;
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+
+          // Validate username
+          if (username.length < 3) {
+              document.getElementById('usernameError').innerText = 'Username must be at least 3 characters long';
+              isValid = false;
+          }
+
+          // Validate password
+          if (password.length < 6) {
+              document.getElementById('passwordError').innerText = 'Password must be at least 6 characters long';
+              isValid = false;
+          }
+
+          return isValid;
+      }
+  </script>
+            </form>
+ 
+</body>
+
+</html>
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LOGIN</title>
+    <link href="Login.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQOzFakhJQebE-EOAuyXMW_yIGT0FnO3RDb6OfWni6zTTd14XOhgH_m9kjEZ_EMitTCo&usqp=CAU">
+</head>
+
+<body>
+
+<div class="login-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQOzFakhJQebE-EOAuyXMW_yIGT0FnO3RDb6OfWni6zTTd14XOhgH_m9kjEZ_EMitTCo&usqp=CAU"
+        alt="Logo" height="200px" width="200px">
+    <h2>Login to access <bb id="Hello">INFOSTUD</bb>
+    </h2>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <div class="error" id="usernameError"></div>
+        </div>
+        <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <div class="error" id="passwordError"></div>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script src="./logIn.js"> </script>
+</body>
+
+</html>
