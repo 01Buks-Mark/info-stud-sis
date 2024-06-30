@@ -78,34 +78,59 @@ main {
 }
 
 .hero {
-  align-items: center;
-  margin: 10px;
-  display: block;
-  border-radius: 20px;
-  border: #333;
-}
-.hero p{
-  text-align: center;
-  justify-content: space-around;
-  font-size: 16px;
-}
-.hero h2{
-  text-align: center;
-  justify-content: center;
-  font-size: 24px;
-}
-.hero img{
-  justify-content: space-around;
-  display: inherit;
- width: 40em;
- height: 25em;
-align-content: center;
-  align-items: center;
-  margin-left: 50px;
-  object-fit: cover;
-}
-.hero .image-info{
   position: relative;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  /* Adjust font family as needed */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1.0;
+  /* Adjust opacity to make text more readable */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  /* Adjust padding as needed */
+  box-sizing: border-box;
+}
+
+.hero-content p {
+  font-size: 24px;
+  background-color: black;
+  font-weight: 600;
+  /* Adjust font weight as needed */
+  margin: 0;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+ color: black;
+ background-color: white;
+  font-weight: 800;
+  /* Adjust font weight as needed */
+  margin: 10px 0 0;
+  /* Adjust spacing between paragraphs */
 }
 
 
@@ -197,8 +222,8 @@ align-content: center;
   display: none;
   position: relative;
   text-align: center;
-  height: 300px;
-  width: 500px;
+  height: 500px;
+  width: 800px;
   /* Adjust the height */
   background-size: cover;
   background-position: center;
@@ -221,6 +246,7 @@ align-content: center;
 .mySlides h3 {
   font-size: 2em;
   margin-bottom: 10px;
+  color: white;
 }
 
 .mySlides p {
@@ -275,45 +301,6 @@ align-content: center;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f9f9f9;
-}
-
- h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-
-a {
-  text-decoration: none;
-  color: #337ab7;
-}
-
-a:hover {
-  color: #23527c;
-}
-
-/* Specific Styles */
-
-#header {
-  background: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-
-#main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
 
 
 
@@ -350,10 +337,12 @@ a:hover {
 .card h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  color: white;
 }
 
 .card p {
   font-size: 1em;
+  color: white;
 }
 
 h2 {
