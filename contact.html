@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="abs.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="FaQs.html">FAQs</a></li>
+                <li><a href="blog.html">Our Blog</a></li>
+                <li><a href="Checkout.html">Fees</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach out to us with any questions or feedback.</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> School of Computing, Block BMakerere University</p>
+                <p><strong>Phone:</strong> (=256) 705-847455</p>
+                <p><strong>Email:</strong> <a href="mailto:info@infostud.com">info@infostud.com</a></p>
+                <div id="map"></div>
+            </div>
+            <div class="form">
+                <h2>Contact Form</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2024 Student Information System</p>
+    <p><a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKCp5Jjg-r02yoSanzle_7oJJLidWn-rc"></script>
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js"></script>
+   
+    <script src="contact.js"></script>
+ 
+</body>
+
+</html>
