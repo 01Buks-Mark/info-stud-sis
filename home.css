@@ -70,12 +70,49 @@ button {
   cursor: pointer;
 }
 
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2em;
 }
+.search-container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 10px auto;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.search-container label {
+  margin-right: 8px;
+}
+.search-container img{
+  width: 20px;
+  display: flex;
+}
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Adjust styles as per your design */
 
 .hero {
   position: relative;
